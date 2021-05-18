@@ -6,6 +6,10 @@ import { Component } from "@angular/core";
 })
 export class ServerComponent {
   serverId: number = 10;
-  serverStatus: string = 'offline';
+  serverStatus: string = 'Up & Running';
+
+  getServerStatus() {
+    return this.serverStatus;
+  }
 
 }
