@@ -5,7 +5,12 @@ import { Component, OnInit } from '@angular/core';
   template: `
     <app-server></app-server>
     <app-server></app-server>`,
-  styleUrls: ['./servers.component.css']
+  // styleUrls: ['./servers.component.css']
+  styles: [`
+      p {
+        color: green
+      }
+    `]
 })
 export class ServersComponent implements OnInit {
 
