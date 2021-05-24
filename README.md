@@ -4,7 +4,8 @@
 
 ### Training projects
 
-* my-first-app
+* my-first-app: to start up and play around angular basics
+* my-recipe-app: to build up a very basic angular web app for recipes
 
 ## Aditional references
 
