@@ -12,6 +12,8 @@ export class ServersComponent  {
   userName = '';
   serverCreated = false;
   servers = ['Server 1', 'Server 2', 'Server 3'];
+  showSecret = false;
+  log = [];
 
   constructor() {
     setTimeout(() => {this.allowNewServer = true}, 2000);
@@ -32,6 +34,12 @@ export class ServersComponent  {
 
   onResetUserName() {
     this.userName = '';
+  }
+
+  onToggleDetails() {
+    this.showSecret = !this.showSecret;
+    // this.log.push(this.log.length + 1);
+    this.log.push(new Date());
   }
 
 }
