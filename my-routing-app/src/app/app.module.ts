@@ -14,8 +14,10 @@ import { ServerComponent } from './servers/server/server.component';
 import { ServersService } from './servers/servers.service';
 
 const appRoutes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: '', component: HomeComponent, pathMatch: 'full' },
   { path: 'users', component: UsersComponent },
+  { path: 'users/:id' /* dynamic URL param */, component: UserComponent },
+  { path: 'users/:id/:name' /* dynamic URL param */, component: UserComponent },
   { path: 'servers', component: ServerComponent }
 ];
 
